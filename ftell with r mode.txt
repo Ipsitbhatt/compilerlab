@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+char ch	;
+FILE *fp;
+fp=fopen("ABC.txt","r");
+ch = fgetc(fp);
+while(ch!=EOF)
+{
+ putchar(ch);
+ ch = fgetc(fp);
+
+}
+clrscr();
+printf("%ld",ftell(fp));
+fclose(fp);
+
+getch();
+}

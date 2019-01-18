@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{ clrscr();
+FILE *fp;
+char a[]="This is CSE-BDA";
+fp =fopen("ABC.txt","w");
+fseek(fp,10,SEEK_SET);
+fputs("Compiler LAb",fp);
+fclose(fp);
+getch();
+}
